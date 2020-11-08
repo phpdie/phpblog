@@ -72,6 +72,14 @@ class UserController extends Controller
      */
     public function edit($id)
     {
+        // flash('Message')->success();
+        // flash('Message')->error();
+        // flash('Message')->warning();
+        // flash('Message')->overlay();
+        flash()->overlay('Modal Message', 'Modal Title');//最常用
+        // flash('Message')->important();//页面显示消息 带有关闭按钮
+        // flash('Message')->error()->important(); //页面显示消息 带有关闭按钮
+
         $result=DB::table('user')->where(['id'=>$id])->first();
 
         // print_r($result);

@@ -175,6 +175,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //新添加的，显示消息框要用到
+        Laracasts\Flash\FlashServiceProvider::class,
+
     ],
 
     /*
